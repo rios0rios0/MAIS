@@ -7,7 +7,6 @@
     <groupId>com.rios0rios0</groupId>
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <url>https://github.com/rios0rios0/MAIS</url>
     <properties>
         <java.version>1.7</java.version>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -39,31 +38,108 @@
                     </execution>
                 </executions>
             </plugin>
-			<plugin>
-				<groupId>org.eluder.coveralls</groupId>
-				<artifactId>coveralls-maven-plugin</artifactId>
-				<version>4.3.0</version>
-			</plugin>
-			<plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.7.6.201602180812</version>
-				<executions>
-					<execution>
-						<id>prepare-agent</id>
-						<goals>
-							<goal>prepare-agent</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.6.201602180812</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>generate-report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
     <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.jprocesses</groupId>
             <artifactId>jProcesses</artifactId>
             <version>1.6.5</version>
         </dependency>
     </dependencies>
+    <reporting>
+        <plugins>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.1</version>
+                <configuration>
+                </configuration>
+                <reportSets>
+                    <reportSet>
+                        <id>api-only</id>
+                        <reports>
+                            <report>javadoc</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>license</report>
+                            <report>scm</report>
+                            <report>dependency-info</report>
+                            <report>dependencies</report>
+                        </reports>
+                        <configuration>
+                            <linkOnly>true</linkOnly>
+                        </configuration>
+                    </reportSet>
+                </reportSets>
+            </plugin>-->
+        </plugins>
+    </reporting>
+    <url>https://github.com/rios0rios0/MAIS</url>
+    <inceptionYear>2018</inceptionYear>
+    <issueManagement>
+        <url>https://github.com/rios0rios0/MAIS/issues</url>
+        <system>Github Issues</system>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.pt-br.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>rios0rios0</id>
+            <email>felipe.rios.silva@outlook.com</email>
+            <name>Felipe Rios</name>
+            <url>https://www.linkedin.com/in/rios0rios0</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>-3</timezone>
+        </developer>
+    </developers>
 </project>
