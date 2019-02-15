@@ -1,3 +1,4 @@
+[![Analytics](https://ga-beacon.appspot.com/UA-134533084-1/github.com/rios0rios0/MAIS?pixel)](https://github.com/rios0rios0/MAIS)
 <h1 align="center">Multi Agent Intelligent System</h1>
 <p align="center">
     <a href="https://github.com/rios0rios0/MAIS/releases/latest" alt="Latest Release">
