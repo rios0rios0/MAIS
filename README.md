@@ -1,4 +1,4 @@
-# Multi Agent Intelligent System
+<h1 align="center">Multi Agent Intelligent System</h1>
 <p align="center">
     <a href="https://github.com/rios0rios0/MAIS/releases/latest" alt="Latest Release">
         <img src="https://img.shields.io/github/release/rios0rios0/MAIS.svg?style=for-the-badge&logo=github" /></a>
